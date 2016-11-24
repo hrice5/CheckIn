@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SignIn/Registration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <ion-list>
+
+<h3><b>Sign In</b><ion-icon name="arrow-round-down" item-left large></ion-icon></h3>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+
+<button ion-button>Sign In</button>
+
+<p>-----------------------------------------------------</p>
+
+<ion-list>
+
+<h3><b>Registration</b><ion-icon name="arrow-round-down" item-left large></ion-icon></h3>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+<ion-item>
+  <ion-label>Gender</ion-label>
+  <ion-select [(ngModel)]="gender">
+    <ion-option value="f" selected="true">Female</ion-option>
+    <ion-option value="m">Male</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Allergic to Foods?</ion-label>
+  <ion-select [(ngModel)]="allergic">
+    <ion-option value="no">None</ion-option>
+    <ion-option value="seaf" selected="true">Seafood</ion-option>
+    <ion-option value="fruit">Fruit</ion-option>
+    <ion-option value="gluten">Gluten</ion-option>
+    <ion-option value="nut">Nuts</ion-option>
+    <ion-option value="egg">Eggs</ion-option>
+    <ion-option value="soy">Soy</ion-option>
+    <ion-option value="milk">Milk</ion-option>
+  </ion-select>
+ </ion-item>
+
+<button ion-button>Sign Up</button>
+
+
+</ion-list>
+
+
+
+
+</ion-content>
