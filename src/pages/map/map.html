@@ -1,0 +1,159 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map/Directions
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    {{ item }}
+  </ion-item>
+</ion-list>
+
+
+<ion-card>
+  <h3 class="butterfly">Butterfly Fair Date:June 25th from 10am-5pm</h3>
+  <img src="../img/n-p.png"/>
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+
+   <ion-item>
+    <ion-icon name="arrow-round-up" item-left large></ion-icon>
+    <h2> <b> New Blaine, AR </b> </h2>
+    <p>Head southwest on State Hwy 197/State Hwy 197
+      Loop toward Seller St
+    </p>
+   </ion-item>
+
+      <ion-item>
+    <ion-icon name="arrow-round-forward" item-left large></ion-icon>
+    <p>Turn right onto AR-22 W</p>
+   </ion-item>
+
+   <ion-item>
+    <h2> <b> 301 West Walnut Street </b> </h2>
+    <p>Paris, AR 72855</p>
+   </ion-item>
+
+    <ion-item>
+    <span item-left>36 min</span>
+    <span item-left>(28.7 mi)</span>
+    </ion-item>
+</ion-card>
+
+<ion-card>
+  <img src="../img/a-f.png"/>
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-item>
+    <ion-icon name="arrow-round-up" item-left large></ion-icon>
+    <h2> <b> Altus, AR </b> </h2>
+    <p>Head north on Franklin toward W Park St</p>
+ </ion-item>
+
+ <ion-item>
+     <p>Follow US-64 W, I-40 W and I-540/US-71 S to AR-22 W
+       /Rogers Ave in Fort Smith. Take exit 8A from 
+       I-540/US-71 S
+     </p>
+  </ion-item>
+
+ <ion-item>
+    <ion-icon name="arrow-round-back" item-left large></ion-icon>
+    <p>Turn left onto US-64 W/W Park St</p>
+ </ion-item>
+
+ <ion-item>
+    <ion-icon name="arrow-round-forward" item-left large></ion-icon>
+    <p>Turn right onto Georgia Ridge Dr</p>
+ </ion-item>
+
+ <ion-item>
+    <p>Turn left to <b>merge</b> onto I-40 W</p>
+ </ion-item>
+
+ <ion-item>
+    <p>Take exit 7 for U.S. 71 S/Interstate 540 S 
+      toward Fort Smith
+    </p>
+  </ion-item>
+
+   <ion-item>
+    <ion-icon name="arrow-round-up" item-left large></ion-icon>
+    <p>Continue onto I-540/US-71 S</p>
+  </ion-item>
+ 
+ <ion-item>
+    <p>Take exit 8A for AR-22 W/Rogers Ave</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="arrow-round-forward" item-left large></ion-icon>
+    <p>Turn right onto AR-22 W/Rogers Ave</p>
+  </ion-item>
+
+    <ion-item>
+    <h2> <b> Central Mall </b> </h2>
+    <p>5111 Rogers Avenue, Fort Smith, AR 72903</p>
+    </ion-item>
+
+
+    <ion-item>
+    <span item-left>46 min</span>
+    <span item-left>(45.8 mi)</span>
+    </ion-item>
+</ion-card>
+
+<ion-card>
+  <img src="../img/n-cl.png"/>
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+
+   <ion-item>
+    <ion-icon name="arrow-round-up" item-left large></ion-icon>
+    <h2> <b> New Blaine, AR </b> </h2>
+    <p>Head southwest on State Hwy 197/State Hwy 197
+      Loop toward Seller St
+    </p>
+   </ion-item>
+
+   <ion-item>
+    <ion-icon name="arrow-round-forward" item-left large></ion-icon>
+    <p>Turn right onto AR-22 W</p>
+   </ion-item>
+
+   <ion-item>
+    <h2> <b> County Line Elementary School </b> </h2>
+    <p>12092 Arkansas 22, Branch, AR 72928</p>
+   </ion-item>
+
+    <ion-item>
+    <span item-left>36 min</span>
+    <span item-left>(28.7 mi)</span>
+    </ion-item>
+</ion-card>
+
+
+
+
+
+
+
+
+
+</ion-content>
