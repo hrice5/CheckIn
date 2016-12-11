@@ -4,23 +4,29 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="body" padding>
 
   <h3>Workers</h3>
+
 
   <ion-grid>
   <ion-row>
     <ion-col width-13 class="outline"><b> Name </b></ion-col>
     <ion-col width-13 class="outline"><b> Job </b></ion-col>
     <ion-col width-13 class="outline"><b> Event </b></ion-col>
+    <ion-col width-13 class="outline"><b> There or Not?</b></ion-col>
     <ion-col width-13 class="outline"><b> Check </b></ion-col>
     <ion-col width-13 class="outline"><b> Check Out </b></ion-col>
   </ion-row>
   </ion-grid>
 
+
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Sally</ion-col>
+    <ion-col width-13 class="eep"><b>Sally</b>
+      <img src="img/sally1.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-item>
@@ -33,6 +39,18 @@
     </ion-col>
     
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at" selected="true">Attending</ion-option>
+      <ion-option value="fee">Emergency</ion-option>
+      <ion-option value="s">Sick</ion-option>
+      <ion-option value="l">Late</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
     
     <ion-col width-13 class="eep"> 
       <ion-label> <button ion-button (click)="setTime(0)" class="button">CheckIn</button> 
@@ -50,9 +68,13 @@
   </ion-row>
   </ion-grid>
 
+  
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Steve</ion-col>
+    <ion-col width-13 class="eep"><b>Steve</b>
+      <img src="img/steve1.png" height="120" width="150" >
+    </ion-col>
     <ion-col width-13 class="eep">
       <ion-item>
       <ion-label>Job</ion-label>
@@ -64,6 +86,18 @@
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at0" selected="true">Attending</ion-option>
+      <ion-option value="fee0">Emergency</ion-option>
+      <ion-option value="s0">Sick</ion-option>
+      <ion-option value="l0">Late</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep">
         <ion-label> <button (click)="setTime(2)" ion-button class="button">CheckIn</button> 
@@ -79,9 +113,13 @@
   </ion-row>
   </ion-grid>
 
+
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Jim</ion-col>
+    <ion-col width-13 class="eep"><b>Jim</b>
+      <img src="img/jim1.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-item>
@@ -94,6 +132,18 @@
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at1" selected="true">Attending</ion-option>
+      <ion-option value="fee1">Emergency</ion-option>
+      <ion-option value="s1">Sick</ion-option>
+      <ion-option value="l1">Late</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep"> 
         <ion-label> <button (click)="setTime(4)" ion-button class="button">CheckIn</button> 
@@ -109,9 +159,13 @@
   </ion-row>
   </ion-grid>
 
+
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Heather</ion-col>
+    <ion-col width-13 class="eep"><b>Heather</b>
+      <img src="img/heather1.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep"><ion-item>
       <ion-label>Job</ion-label>
@@ -123,6 +177,18 @@
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at2" selected="true">Attending</ion-option>
+      <ion-option value="fee2">Emergency</ion-option>
+      <ion-option value="s2">Sick</ion-option>
+      <ion-option value="l2">Late</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-label> <button (click)="setTime(6)" ion-button class="button">CheckIn</button> 
@@ -138,9 +204,13 @@
   </ion-row>
   </ion-grid>
 
+  
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Robert</ion-col>
+    <ion-col width-13 class="eep"><b>Robert</b>
+      <img src="img/robert1.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-item>
@@ -153,6 +223,18 @@
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at3" selected="true">Attending</ion-option>
+      <ion-option value="fee3">Emergency</ion-option>
+      <ion-option value="s3">Sick</ion-option>
+      <ion-option value="l3">Late</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-label> <button (click)="setTime(8)" ion-button class="button">CheckIn</button> 
@@ -170,19 +252,25 @@
 
   <h3>Participants</h3>
 
+
+
   <ion-grid>
   <ion-row>
     <ion-col width-13 class="outline"><b> Name </b></ion-col>
     <ion-col width-13 class="outline"><b> Kid/Adult? </b></ion-col>
     <ion-col width-13 class="outline"><b> Event </b></ion-col>
+    <ion-col width-13 class="outline"><b> There or Not?</b></ion-col>
     <ion-col width-13 class="outline"><b> Check </b></ion-col>
     <ion-col width-13 class="outline"><b> Check Out </b></ion-col>
   </ion-row>
   </ion-grid>
 
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Bart</ion-col>
+    <ion-col width-13 class="eep"><b>Bart</b>
+      <img src="img/bart.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-item>
@@ -198,6 +286,16 @@
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
 
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at4" selected="true">Attending</ion-option>
+      <ion-option value="na0">Not Attending</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
+
     <ion-col width-13 class="eep"> 
       <ion-label> <button (click)="setTime(10)" ion-button class="button">CheckIn</button> 
             <div>{{myDate[10] | date:short}}</div>
@@ -212,23 +310,37 @@
   </ion-row>
   </ion-grid>
 
+
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Fed</ion-col>
+    <ion-col width-13 class="eep"><b>Fed</b>
+      <img src="img/fed.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
             <ion-item>
       <ion-label>Kid/Adult?</ion-label>
       <ion-select [(ngModel)]="ak">
-      <ion-option value="k" selected="true">Kid</ion-option>
-      <ion-option value="a">Adult</ion-option>
-      <ion-option value="am">Adult/Mother</ion-option>
-      <ion-option value="af">Adult/Father</ion-option>
+      <ion-option value="k0" selected="true">Kid</ion-option>
+      <ion-option value="a0">Adult</ion-option>
+      <ion-option value="am0">Adult/Mother</ion-option>
+      <ion-option value="af0">Adult/Father</ion-option>
       </ion-select>
     </ion-item>
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at5" selected="true">Attending</ion-option>
+      <ion-option value="na1">Not Attending</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep">
       <ion-label> <button (click)="setTime(12)" ion-button class="button">CheckIn</button> 
@@ -244,23 +356,37 @@
   </ion-row>
   </ion-grid>
 
+  
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Jeania</ion-col>
+    <ion-col width-13 class="eep"><b>Jeania</b>
+      <img src="img/jeania.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
             <ion-item>
       <ion-label>Kid/Adult?</ion-label>
       <ion-select  [(ngModel)]="ak">
-      <ion-option value="k" selected="true">Kid</ion-option>
-      <ion-option value="a">Adult</ion-option>
-      <ion-option value="am">Adult/Mother</ion-option>
-      <ion-option value="af">Adult/Father</ion-option>
+      <ion-option value="k1" selected="true">Kid</ion-option>
+      <ion-option value="a1">Adult</ion-option>
+      <ion-option value="am1">Adult/Mother</ion-option>
+      <ion-option value="af1">Adult/Father</ion-option>
       </ion-select>
     </ion-item>
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at6" selected="true">Attending</ion-option>
+      <ion-option value="na2">Not Attending</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep"> 
       <ion-label> <button (click)="setTime(14)" ion-button class="button">CheckIn</button> 
@@ -276,23 +402,37 @@
   </ion-row>
   </ion-grid>
 
+  
+
   <ion-grid>
   <ion-row>
-    <ion-col width-13 class="eep">Jill</ion-col>
+    <ion-col width-13 class="eep"><b>Jill</b>
+      <img src="img/jill.png" height="120" width="150" >
+    </ion-col>
 
     <ion-col width-13 class="eep">
             <ion-item>
       <ion-label>Kid/Adult?</ion-label>
       <ion-select  [(ngModel)]="ak">
-      <ion-option value="k" selected="true">Kid</ion-option>
-      <ion-option value="a">Adult</ion-option>
-      <ion-option value="am">Adult/Mother</ion-option>
-      <ion-option value="af">Adult/Father</ion-option>
+      <ion-option value="k2" selected="true">Kid</ion-option>
+      <ion-option value="a2">Adult</ion-option>
+      <ion-option value="am2">Adult/Mother</ion-option>
+      <ion-option value="af2">Adult/Father</ion-option>
       </ion-select>
     </ion-item>
     </ion-col>
 
     <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>There or Not?</ion-label>
+      <ion-select  [(ngModel)]="attending">
+      <ion-option value="at7" selected="true">Attending</ion-option>
+      <ion-option value="na3">Not Attending</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
 
     <ion-col width-13 class="eep"> 
       <ion-label> <button (click)="setTime(16)" ion-button class="button">CheckIn</button> 
